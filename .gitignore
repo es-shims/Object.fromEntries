@@ -57,3 +57,6 @@ typings/
 # dotenv environment variables file
 .env
 
+npm-shrinkwrap.json
+package-lock.json
+yarn.lock
