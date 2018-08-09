@@ -25,6 +25,8 @@ var legacyAssign = function assign(obj, entries) {
 var hasSymbols = typeof Symbol === 'function' && typeof Symbol('foo') === 'symbol';
 
 module.exports = function fromEntries(iterable) {
+	ES.RequireObjectCoercible(iterable);
+
 	var obj = {};
 
 	// this part isn't in the spec, it's for a reasonable fallback for pre-ES6 environments
@@ -36,8 +38,16 @@ module.exports = function fromEntries(iterable) {
 		return obj;
 	}
 
-	var iter = ES.GetIterator(iterable);
+	/*
+	return ES.AddEntriesFromIterable(obj, iterable, ES.CreateBuiltinFunction('CreateDataPropertyOnObject'));
+	function adder(key, value) {
+		var O = this;
+		var propertyKey = ES.ToPropertyKey(key);
+		CreateDataPropertyOrThrow(O, propertyKey, value);
+	}
+	*/
 
+	var iter = ES.GetIterator(iterable);
 	while (true) { // eslint-disable-line no-constant-condition
 		var next = ES.IteratorStep(iter);
 		if (next === false) {
