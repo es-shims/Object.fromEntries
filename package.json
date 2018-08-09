@@ -1,6 +1,6 @@
 {
 	"name": "object.fromentries",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"author": "Jordan Harband",
 	"description": "ES proposal-spec-compliant Object.fromEntries shim.",
 	"license": "MIT",
