@@ -9,6 +9,7 @@
 		"multiline-comment-style": 1,
 		"new-cap": [2, {
 			"capIsNewExceptions": [
+				"AddEntriesFromIterable",
 				"CreateDataPropertyOrThrow",
 				"Get",
 				"GetIterator",
