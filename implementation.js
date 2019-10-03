@@ -20,8 +20,6 @@ var legacyAssign = function assign(obj, entries) {
 	}
 };
 
-/* global Symbol */
-
 var hasSymbols = typeof Symbol === 'function' && typeof Symbol('foo') === 'symbol';
 
 module.exports = function fromEntries(iterable) {
