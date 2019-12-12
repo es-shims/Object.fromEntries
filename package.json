@@ -1,7 +1,10 @@
 {
 	"name": "object.fromentries",
 	"version": "2.0.1",
-	"author": "Jordan Harband",
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"description": "ES proposal-spec-compliant Object.fromEntries shim.",
 	"license": "MIT",
 	"main": "index.js",
