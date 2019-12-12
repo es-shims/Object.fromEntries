@@ -1,3 +1,12 @@
+2.0.2 / 2019-12-12
+=================
+  * [Refactor] use split-up `es-abstract` (63% bundle size decrease)
+  * [readme] remove testling
+  * [Dev Deps] update `eslint`, `@ljharb/eslint-config`
+  * [meta] add `funding` field
+  * [Tests] use shared travis-ci configs
+  * [actions] add automatic rebasing / merge commit blocking
+
 2.0.1 / 2019-10-03
 =================
   * [Fix] do not mutate `Object.fromEntries` when already present
