@@ -2,7 +2,7 @@
 
 var AddEntriesFromIterable = require('es-abstract/2023/AddEntriesFromIterable');
 var CreateDataPropertyOrThrow = require('es-abstract/2023/CreateDataPropertyOrThrow');
-var RequireObjectCoercible = require('es-abstract/2023/RequireObjectCoercible');
+var RequireObjectCoercible = require('es-object-atoms/RequireObjectCoercible');
 var ToPropertyKey = require('es-abstract/2023/ToPropertyKey');
 
 var adder = function addDataProperty(key, value) {
